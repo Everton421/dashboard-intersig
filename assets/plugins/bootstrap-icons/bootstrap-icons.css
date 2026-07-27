@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("fonts/bootstrap-icons.woff2?3a2a0f174f70e56922e54900ae0807f7") format("woff2"),
+       url("fonts/bootstrap-icons.woff?3a2a0f174f70e56922e54900ae0807f7") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .bi {
+    display: inline-block;
+    font-family: "bootstrap-icons" !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  

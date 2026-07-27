@@ -1,0 +1,220 @@
+/* 
+ * DASHBOARD PREMIUM: NAVY-INDUSTRIAL BRUTALISM
+ * Design by Antigravity Frontend Architect
+ * Focus: Confidence, Precision, Sophistication
+ */
+
+:root {
+    /* Color Palette - Midnight Command */
+    --bg-main: #0F172A;
+    --bg-surface: #1E293B;
+    --bg-elevation: #334155;
+    
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    
+    --accent-success: #10B981;
+    --accent-warning: #F59E0B;
+    --accent-error: #EF4444;
+    --accent-steel: #E2E8F0;
+    
+    /* Spacing & Geometry */
+    --gap: 24px;
+    --radius-sharp: 0px;
+    --radius-soft: 4px;
+    --border-width: 1.5px;
+    
+    /* Shadows - Technical Perception */
+    --shadow-flat: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadow-glow: 0 0 15px rgba(16, 185, 129, 0.1);
+}
+
+/* Base Reset & Typography */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout - Asymmetric Command Center */
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    min-height: 100vh;
+    gap: 0;
+}
+
+/* Section: Strategic Command (Director View) */
+.command-sidebar {
+    background-color: var(--bg-elevation);
+    padding: 40px;
+    border-right: var(--border-width) solid var(--text-muted);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.strategic-kpi {
+    margin-bottom: 60px;
+}
+
+.strategic-kpi h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-secondary);
+    margin: 0 0 16px 0;
+}
+
+.huge-value {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+    color: var(--accent-steel);
+}
+
+.huge-value .currency {
+    font-size: 24px;
+    color: var(--text-muted);
+}
+
+.trend-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.trend-up { color: var(--accent-success); }
+.trend-down { color: var(--accent-error); }
+
+/* Section: Operational Flow (Buyer View) */
+.operational-main {
+    padding: 40px;
+    overflow-x: hidden;
+}
+
+.grid-fragments {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--gap);
+}
+
+/* Fragmented Cards (Non-standard) */
+.card-frag {
+    background: var(--bg-surface);
+    border: var(--border-width) solid var(--text-muted);
+    padding: 24px;
+    position: relative;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-frag:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0px var(--text-muted);
+}
+
+.card-frag::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background: var(--text-muted);
+}
+
+.card-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent-steel);
+}
+
+.card-subtext {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+/* Tables - Technical Precision */
+.table-premium {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+
+.table-premium th {
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--text-muted);
+}
+
+.table-premium td {
+    padding: 16px 8px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.table-premium tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Progress Bars - Industrial Style */
+.progress-technical {
+    height: 4px;
+    background: var(--bg-elevation);
+    width: 100%;
+    margin-top: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--accent-success);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .dashboard-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .command-sidebar {
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: var(--border-width) solid var(--text-muted);
+    }
+}
+
+/* Animations */
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+    animation: reveal 0.4s ease-out forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
