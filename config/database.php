@@ -1,6 +1,6 @@
 <?php
 class Database {
-    private $host = "192.168.100.106";
+    private $host = "localhost";
     private $db_name = "intersig";
     private $username = "root";
     private $password = "Nileduz";
