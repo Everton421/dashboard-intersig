@@ -1,6 +1,6 @@
 <?php
 //syma
-$servidor = "192.168.35.2";
+$servidor = "localhost";
 $usuario  = "intersig";
 $senha    = "Nileduz";
 $dbname   = "dashboard";
@@ -10,7 +10,7 @@ $dash = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
 
 if (!$dash) {
-    die("Falha na conexão: " . mysqli_connect_error());
+    die("Falha na conexÃ£o: " . mysqli_connect_error());
 }
 
 

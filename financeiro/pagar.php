@@ -476,6 +476,7 @@ if (isset($dash) && $stmt = $dash->prepare(
                                     <select name="tipo_data" id="tipo_data" class="form-control-premium">
                                         <option value="lancamento" selected>Data de Lançamento</option>
                                         <option value="vencimento">Data de Vencimento</option>
+                                        <option value="pagamento">Data de Pagamento</option>
                                     </select>
                                 </div>
                                 <div class="filter-group">

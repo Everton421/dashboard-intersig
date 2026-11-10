@@ -98,11 +98,13 @@ if ($filtroOrigem === 'faturamento') {
 
 // Filtro de Data
 $colunaData = ($tipoData === 'vencimento') ? 're.vencimento' : 're.data_lancamento';
+
+$colunaData = ($tipoData === 'pagamento') ? 're.DATA_PGTO' : 're.data_lancamento';
+
 $sql .= " AND $colunaData BETWEEN '$dataVencimento' AND '$dataVencimentoAte'";
 
 // Filtro de Valor (Já tratados pela função limparValorSGBD)
 $sql .= " AND re.valor BETWEEN $valor_inicial AND $valor_final";
-
 
 $results = $dash->query($sql);
 $orders = array();

@@ -1,27 +1,27 @@
 <?php 
-$servidor ="192.168.8.3";
+$servidor ="26.196.46.134";
 $usuario="intersig";
-$senha="ewqiop2017";
-$dbname="mesquita_publico";
-$dbname="mesquita_vendas";
-$dbname="mesquita_financeiro";
+$senha="Ganapataye";
+$dbname="sk_publico";
+$dbname="sk_vendas";
+$dbname="sk_financeiro";
 $dbname="dashboard";
 
-$dbname="jr_publico";
-$dbname="jr_vendas";
-$dbname="jr_financeiro";
+$dbname="sk_publico";
+$dbname="sk_vendas";
+$dbname="sk_financeiro";
 
 
-$prefixe = 'mesquita_estoque';
-$prefixp = 'mesquita_publico';
-$prefixv = 'mesquita_vendas';
-$prefixf = 'mesquita_financeiro';
+$prefixe = 'sk_estoque';
+$prefixp = 'sk_publico';
+$prefixv = 'sk_vendas';
+$prefixf = 'sk_financeiro';
 $prefixd = 'dashboard';
 
 
-$prefixjrp = 'jr_publico';
-$prefixjrv = 'jr_vendas';
-$prefixjrf = 'jr_financeiro';
+$prefixskp = 'sk_publico';
+$prefixskv = 'sk_vendas';
+$prefixskf = 'sk_financeiro';
 
 
 $conexao=mysqli_connect($servidor, $usuario, $senha, $dbname);

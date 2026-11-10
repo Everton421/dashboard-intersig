@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "intersig";
+    private $db_name = "dashboard";
     private $username = "root";
     private $password = "Nileduz";
     public $conn;

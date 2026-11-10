@@ -64,6 +64,7 @@ if ($filtroOrigem === 'faturamento') {
 
 $tipoData = isset($_REQUEST['tipo_data']) ? $_REQUEST['tipo_data'] : 'lancamento';
 $colunaData = ($tipoData === 'vencimento') ? 're.vencimento' : 're.data_lancamento';
+$colunaData = ($tipoData === 'pagamento') ? 're.DATA_PGTO' : 're.data_lancamento';
 
 $sql .= " AND $colunaData >= '$dataVencimento' AND $colunaData <= '$dataVencimentoAte'";
 $sql .= " AND re.valor >= '$valor_inicial' AND re.valor <= '$valor_final' ";

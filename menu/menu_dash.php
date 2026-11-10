@@ -154,6 +154,13 @@
                      </a>
                  </li>
 
+                 <li class="nav-item">
+                     <a href="../relatorios/produtos_separacao.php" class="nav-link">
+                         <i class="nav-icon bi bi-circle text-info"></i>
+                         <p>Produtos p/ Separação</p>
+                     </a>
+                 </li>
+
              </ul>
          </li>
          <li class="nav-item">
